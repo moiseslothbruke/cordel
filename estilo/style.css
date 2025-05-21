@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/*FONTES*/
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --fonte1: 'Passion One', cursive;
+    --fonte2:  'Sriracha', cursive;
+}
+
+html , body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+/*HEADER*/
+
+header{
+    background-color: #000;
+    margin: auto;
+    padding: 50px;
+    font-size: 1vw;
+}
+
+header p {
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 10px;
+
+}
+
+header h1{
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-variant: small-caps;
+    text-align: center;
+    padding-top: 15px;
+    font-family: var(--fonte2);
+    font-size: 5vw;
+
+}
+
+a{
+    color: #fff;
+}
+
+a:hover{
+    color: chartreuse;
+}
+
+/*CONTEÚDO PRINCIPAL*/
+
+section.normal{
+    background-color: #fff;
+    color: #000;
+}
+
+section.imagem{
+    background-color: #3d3d3d;
+    box-shadow: inset 6px 6px 13px 0px #00000077;
+    color: #fff;
+    background-attachment: fixed; /*Aliada a outras configurações, produz o efeito paralax*/
+
+}
+
+section.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: #00000052;
+}
+
+
+section{
+    padding-top: 0px;
+    padding-bottom: 5vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte1);
+    font-size: 3.5vw;
+}
+
+section#img1{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+
+}
+
+section#img2{
+    background-image: url(../imagens/background002.jpg);
+    background-size: cover;
+}
+
+p{
+    padding-bottom: 1em;
+}
+
+/*RODAPÉ*/
+
+footer{
+    background-color: #000;
+    text-align: center;
+}
+
+footer p{
+    color: #fff;
+}
